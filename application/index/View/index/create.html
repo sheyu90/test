@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>留言列表 -- HoverTree</title>
+<style>
+.keleyitable {
+width: 800px;
+}
+
+.keleyitable table, td, th {
+border: 1px solid green;margin-top:10px;
+}
+.klytd {width:100px;text-align:right
+}
+.hvttd {
+width:500px}
+</style>
+
+</head>
+<body>
+<div style="margin:0px auto;" class="keleyitable"><h2>留言列表</h2>
+
+<form method="post">
+    <table id = "massage">
+
+<tr><td class="klytd">留言人：</td><td class ="hvttd"><input type="text" class="hvttd" name='username' value="{:session('user')}"/></td></tr>
+<tr><td class="klytd">标题：</td><td class ="hvttd"><input type="text" class="hvttd" name='title'/></td></tr>
+<tr><td class="klytd">内容：</td><td class ="hvttd"><input type="text" class="hvttd" name='content'/></td></tr>
+
+</table>
+<button>提交</button><button href="{:url('index/Index/index')}">返回</button>
+</form>
+
+
+
+</div>
+
+</body>
+
+</html>
